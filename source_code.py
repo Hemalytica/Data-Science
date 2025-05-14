@@ -73,7 +73,7 @@ print(data['label'].value_counts())
 
 # Plot label distribution
 plt.figure(figsize=(6,4))
-sns.countplot(x='label', data=data, palette='Set2')
+sns.countplot(x='label', data=data, hue='label', palette='Set2', legend=False)
 plt.title('Distribution of Fake vs Real News')
 plt.show()
 
